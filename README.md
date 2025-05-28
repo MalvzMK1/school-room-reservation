@@ -2,6 +2,16 @@
 
 Esta API permite o gerenciamento de reservas de salas para turmas escolares. Através dela, é possível listar, criar e consultar reservas específicas.
 
+## ⚙ Como Rodar
+
+```bash
+python -m venv venv
+source venv/Scripts/activate
+pip install -r requirements.txt
+docker build -t reservations
+docker run -d -p 5002:5002 --name reservations reservations -d
+```
+
 ## 🛠️ Endpoints
 
 ---
